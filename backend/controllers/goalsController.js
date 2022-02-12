@@ -12,6 +12,10 @@ module.exports = {
   // @route   POST /api/goals
   // @access  Private
   createGoal: (req, res) => {
+    if (!req.body.text) {
+      res.status(400);
+      throw new Error('Goal text is required');
+    }
     res.status(200).json({
       message: 'Goal created successfully!',
     });
