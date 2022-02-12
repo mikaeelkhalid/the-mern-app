@@ -2,10 +2,10 @@
   "name": "mern-project",
   "version": "1.0.0",
   "description": "",
-  "main": "server.mjs",
+  "main": "server.js",
   "scripts": {
-    "start": "node backend/server.mjs",
-    "dev": "nodemon backend/server.mjs"
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "keywords": [],
   "author": "",
